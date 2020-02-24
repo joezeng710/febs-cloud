@@ -1,5 +1,6 @@
 package cc.mrbird.febs.gateway.filter;
 
+import cc.mrbird.febs.common.entity.FebsConstant;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
@@ -39,8 +40,8 @@ public class FebsGatewayRequestFilter extends ZuulFilter {
 
         log.info("请求URI: {}, HTTP Method: {}, 请求IP: {}, ServiceId: {}", requestURI, method, remoteHost, serviceId);
 
-        byte[] zuulToken = Base64Utils.encode("febs:zuul:123456".getBytes());
-        ctx.addZuulRequestHeader("ZuulToken", String.valueOf(zuulToken));
+        byte[] zuulToken = Base64Utils.encode(FebsConstant.ZUUL_TOKEN_VALUE.getBytes());
+        ctx.addZuulRequestHeader(FebsConstant.ZUUL_TOKEN_HEADER, String.valueOf(zuulToken));
         return null;
     }
 }
