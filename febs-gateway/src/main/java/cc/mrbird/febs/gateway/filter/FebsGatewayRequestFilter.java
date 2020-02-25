@@ -34,14 +34,14 @@ public class FebsGatewayRequestFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         String serviceId = (String) ctx.get(FilterConstants.SERVICE_ID_KEY);
         HttpServletRequest request = ctx.getRequest();
-        String remoteHost = request.getRemoteHost();
+        String host = request.getRemoteHost();
         String method = request.getMethod();
-        String requestURI = request.getRequestURI();
+        String uri = request.getRequestURI();
 
-        log.info("请求URI: {}, HTTP Method: {}, 请求IP: {}, ServiceId: {}", requestURI, method, remoteHost, serviceId);
+        log.info("请求URI：{}，HTTP Method：{}，请求IP：{}，ServerId：{}", uri, method, host, serviceId);
 
-        byte[] zuulToken = Base64Utils.encode(FebsConstant.ZUUL_TOKEN_VALUE.getBytes());
-        ctx.addZuulRequestHeader(FebsConstant.ZUUL_TOKEN_HEADER, String.valueOf(zuulToken));
+        byte[] token = Base64Utils.encode((FebsConstant.ZUUL_TOKEN_VALUE).getBytes());
+        ctx.addZuulRequestHeader(FebsConstant.ZUUL_TOKEN_HEADER, new String(token));
         return null;
     }
 }
