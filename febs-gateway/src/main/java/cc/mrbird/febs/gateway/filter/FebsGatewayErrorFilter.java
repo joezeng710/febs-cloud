@@ -24,10 +24,9 @@ public class FebsGatewayErrorFilter extends SendErrorFilter {
             String serviceId = String.valueOf(ctx.get(FilterConstants.SERVICE_ID_KEY));
 
             ExceptionHolder exception = findZuulException(ctx.getThrowable());
-            String cause = exception.getErrorCause();
-            Throwable throwable = exception.getThrowable();
-            String message = throwable.getMessage();
-            message = StringUtils.isBlank(message) ? cause : message;
+
+            String message = exception.getThrowable().getMessage();
+            message = StringUtils.isBlank(message) ? exception.getErrorCause() : message;
 
             febsResponse = resolveExceptionMessage(message, serviceId, febsResponse);
 
