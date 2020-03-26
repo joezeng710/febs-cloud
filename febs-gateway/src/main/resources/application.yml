@@ -1,11 +1,16 @@
 server:
   port: 8301
-
 spring:
   application:
     name: FEBS-Gateway
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  boot:
+    admin:
+      client:
+        url: http://localhost:8401
+        username: febs
+        password: 123456
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 20
@@ -41,4 +46,16 @@ zuul:
   host:
     connect-timeout-millis: 40000
     socket-timeout-millis: 20000
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+info:
+  app:
+    name: ${spring.application.name}
+    description: "@project.description@"
+    version: "@project.version@"

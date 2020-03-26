@@ -1,6 +1,5 @@
 server:
   port: 8201
-
 spring:
   application:
     name: FEBS-Server-System
@@ -17,10 +16,16 @@ spring:
       datasource:
         base:
           username: root
-          password: 219418
+          password: 123456
           driver-class-name: com.mysql.cj.jdbc.Driver
           url: jdbc:mysql://localhost:3306/febs_cloud_base?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
       p6spy: true
+  boot:
+    admin:
+      client:
+        url: http://localhost:8401
+        username: febs
+        password: 123456
 eureka:
   client:
     instance-info-replication-interval-seconds: 30

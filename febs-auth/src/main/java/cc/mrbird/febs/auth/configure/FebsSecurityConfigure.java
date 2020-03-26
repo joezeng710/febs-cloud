@@ -21,10 +21,13 @@ public class FebsSecurityConfigure extends WebSecurityConfigurerAdapter {
     @Autowired
     public PasswordEncoder passwordEncoder;
 
+
+    @Override
     @Bean
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
+
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -41,4 +44,5 @@ public class FebsSecurityConfigure extends WebSecurityConfigurerAdapter {
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailService).passwordEncoder(passwordEncoder);
     }
+
 }

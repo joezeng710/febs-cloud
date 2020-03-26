@@ -1,6 +1,5 @@
 server:
   port: 8102
-
 spring:
   application:
     name: FEBS-Auth
@@ -28,9 +27,15 @@ spring:
       datasource:
         base:
           username: root
-          password: 219418
+          password: 123456
           driver-class-name: com.mysql.cj.jdbc.Driver
           url: jdbc:mysql://localhost:3306/febs_cloud_base?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
+  boot:
+    admin:
+      client:
+        url: http://localhost:8401
+        username: febs
+        password: 123456
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 20
@@ -49,4 +54,16 @@ mybatis-plus:
     jdbc-type-for-null: null
   global-config:
     banner: false
-
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+info:
+  app:
+    name: ${spring.application.name}
+    description: "@project.description@"
+    version: "@project.version@"
