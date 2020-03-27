@@ -30,6 +30,8 @@ spring:
     sender:
       type: rabbit
     base-url: http://localhost:8402
+    rabbitmq:
+      queue: zipkin
   sleuth:
     sampler:
       probability: 1
