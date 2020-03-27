@@ -2,6 +2,7 @@ package cc.mrbird.febs.server.test.controller;
 
 import cc.mrbird.febs.common.entity.FebsResponse;
 import cc.mrbird.febs.server.test.service.IHelloService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
 
+@Slf4j
 @RestController
 public class TestController {
 
@@ -17,7 +19,8 @@ public class TestController {
 
     @GetMapping("hello")
     public FebsResponse hello(String name, String lastName){
-        return this.helloService.hello(name + " "+lastName);
+        log.info("Feign调用febs-server-system的/hello服务");
+        return this.helloService.hello(" " + name + " "+lastName);
     }
 
     @GetMapping("test1")
