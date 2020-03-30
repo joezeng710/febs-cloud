@@ -3,14 +3,45 @@ server:
 spring:
   application:
     name: FEBS-Gateway
-  autoconfigure:
-    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
   boot:
     admin:
       client:
         url: http://localhost:8401
         username: febs
         password: 123456
+  cloud:
+    gateway:
+      routes:
+        - id: FEBS-Auth
+          uri: lb://FEBS-Auth
+          predicates:
+            - Path=/auth/**
+          filters:
+            - name: Hystrix
+              args:
+                name: authfallback
+                fallbackUri: forward:/fallback/FEBS-Auth
+        - id: FEBS-Server-System
+          uri: lb://FEBS-Server-System
+          predicates:
+            - Path=/system/**
+          filters:
+            - name: Hystrix
+              args:
+                name: systemFallback
+                fallbackUri: forward:/fallback/FEBS-Server-System
+        - id: FEBS-Server-Test
+          uri: lb://FEBS-Server-Test
+          predicates:
+            - Path=/test/**
+          filters:
+            - name: Hystrix
+              args:
+                name: testFallback
+                fallbackUri: forward:/fallback/FEBS-Server-Test
+      default-filters:
+        - StripPrefix=1
+
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 20
@@ -21,41 +52,20 @@ eureka:
     registry-fetch-interval-seconds: 3
     serviceUrl:
       defaultZone: http://febs:123456@localhost:8001/register/eureka/
-zuul:
-  routes:
-    auth:
-      path: /auth/**
-      serviceId: FEBS-Auth
-      sensitiveHeaders: "*"
-    test:
-      path: /test/**
-      serviceId: FEBS-Server-Test
-      sensitiveHeaders: "*"
-    system:
-      path: /system/**
-      serviceId: FEBS-Server-System
-      sensitiveHeaders: "*"
-  retryable: true
-  ignored-services: "*"
-  ribbon:
-    eager-load:
-      enabled: true
-  SendErrorFilter:
-    error:
-      disable: true
-  host:
-    connect-timeout-millis: 40000
-    socket-timeout-millis: 20000
+
 management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: health, info, gateway
   endpoint:
     health:
       show-details: always
-info:
-  app:
-    name: ${spring.application.name}
-    description: "@project.description@"
-    version: "@project.version@"
+# 熔断设置，超时3s
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 3000

@@ -9,6 +9,9 @@ import org.springframework.context.annotation.PropertySource;
 @SpringBootConfiguration
 @PropertySource(value = {"classpath:febs-gateway.properties"})
 @ConfigurationProperties(prefix = "febs.gateway")
-public class FebsGatewayProperties {
+public class FebsGatewatProperties {
+    /**
+     * 禁止外部訪問的URL
+     **/
     private String forbidRequestUri;
 }
