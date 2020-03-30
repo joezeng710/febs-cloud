@@ -8,7 +8,7 @@ import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 import org.springframework.web.util.pattern.PathPatternParser;
 
 @Configuration
-public class FebsGateWayCorsConfigure {
+public class FebsGatewayCorsConfigure {
 
     @Bean
     public CorsWebFilter corsFilter() {
