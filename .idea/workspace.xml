@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e89f75e4-2169-4a7e-96ca-899cbf46d1db" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/febs-auth/src/main/java/cc/mrbird/febs/auth/configure/FebsSecurityConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/febs-auth/src/main/java/cc/mrbird/febs/auth/configure/FebsSecurityConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/febs-common/febs-common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/configure/FebsOAuth2FeignConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/configure/FebsOAuth2FeignConfigure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/entity/FebsAuthUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/entity/FebsAuthUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/entity/FebsResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/entity/FebsResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/exception/FebsAuthException.class" beforeDir="false" afterPath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/exception/FebsAuthException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/handler/BaseExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/handler/BaseExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/handler/FebsAccessDeniedHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/handler/FebsAccessDeniedHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/handler/FebsAuthExceptionEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/handler/FebsAuthExceptionEntryPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/utils/FebsUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/febs-common/target/classes/cc/mrbird/febs/common/utils/FebsUtil.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Develop/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Develop\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1YvhXZgFcRd0y6Z9hvxQBBZyOYj" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/febs-cloud/pom.xml" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e89f75e4-2169-4a7e-96ca-899cbf46d1db" name="Default Changelist" comment="" />
+      <created>1583829015414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583829015414</updated>
+      <workItem from="1583829020257" duration="31000" />
+      <workItem from="1585208273953" duration="153000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1585208424290">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585208424290" />
+  </component>
+</project>

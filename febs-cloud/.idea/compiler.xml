@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="febs-server-test" />
+        <module name="febs-auth" />
         <module name="febs-gateway" />
         <module name="febs-server-system" />
-        <module name="febs-server-test" />
         <module name="febs-register" />
-        <module name="febs-auth" />
+        <module name="febs-monitor-admin" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +21,7 @@
       <module name="febs-auth" options="-parameters" />
       <module name="febs-common" options="-parameters" />
       <module name="febs-gateway" options="-parameters" />
+      <module name="febs-monitor-admin" options="-parameters" />
       <module name="febs-register" options="-parameters" />
       <module name="febs-server-system" options="-parameters" />
       <module name="febs-server-test" options="-parameters" />

@@ -19,6 +19,6 @@ public class FebsAuthExceptionEntryPoint implements AuthenticationEntryPoint {
         httpServletResponse.setContentType(MediaType.APPLICATION_PROBLEM_JSON_UTF8_VALUE);
         httpServletResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         httpServletResponse.getOutputStream().write(JSONObject.toJSONString(febsResponse.message("无效的token")).getBytes()); */
-        FebsUtil.makeResponse(httpServletResponse, MediaType.APPLICATION_JSON_UTF8_VALUE, HttpServletResponse.SC_UNAUTHORIZED, febsResponse.message("无效的token"));
+        FebsUtil.makeResponse(httpServletResponse, MediaType.APPLICATION_JSON_VALUE, HttpServletResponse.SC_UNAUTHORIZED, febsResponse.message("无效的token"));
     }
 }

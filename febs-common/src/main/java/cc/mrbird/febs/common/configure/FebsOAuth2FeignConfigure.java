@@ -14,8 +14,8 @@ public class FebsOAuth2FeignConfigure {
     public RequestInterceptor oauth2FeignRequestInterceptor() {
         return requestTemplate -> {
             // 添加 Zuul Token
-            String zuulToken = new String(Base64Utils.encode(FebsConstant.ZUUL_TOKEN_VALUE.getBytes()));
-            requestTemplate.header(FebsConstant.ZUUL_TOKEN_HEADER, zuulToken);
+            String zuulToken = new String(Base64Utils.encode(FebsConstant.GATEWAY_TOKEN_VALUE.getBytes()));
+            requestTemplate.header(FebsConstant.GATEWAY_TOKEN_HEADER, zuulToken);
 
             // 添加token
             Object details = SecurityContextHolder.getContext().getAuthentication().getDetails();

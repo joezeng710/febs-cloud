@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4881b76b-5bbb-4f8f-8501-08f1dbe6bbc2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../febs-auth/src/main/java/cc/mrbird/febs/auth/configure/FebsSecurityConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../febs-auth/src/main/java/cc/mrbird/febs/auth/configure/FebsSecurityConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../febs-common/febs-common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/configure/FebsOAuth2FeignConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/configure/FebsOAuth2FeignConfigure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/entity/FebsAuthUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/entity/FebsAuthUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/entity/FebsResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/entity/FebsResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/exception/FebsAuthException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/exception/FebsAuthException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/handler/BaseExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/handler/BaseExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/handler/FebsAccessDeniedHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/handler/FebsAccessDeniedHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/handler/FebsAuthExceptionEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/handler/FebsAuthExceptionEntryPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/utils/FebsUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../febs-common/target/classes/cc/mrbird/febs/common/utils/FebsUtil.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Develop/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Develop\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1YvhbwYaZ0sLVV3q6OVLLq2lbtw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RunManager" selected="Spring Boot.FebsServerTestApplication">
+    <configuration name="FebsAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="febs-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cc.mrbird.febs.auth.FebsAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FebsGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="febs-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cc.mrbird.febs.gateway.FebsGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FebsRegisterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="febs-register" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cc.mrbird.febs.register.FebsRegisterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FebsServerSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="febs-server-system" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cc.mrbird.febs.server.system.FebsServerSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FebsServerTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="febs-server-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cc.mrbird.febs.server.test.FebsServerTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4881b76b-5bbb-4f8f-8501-08f1dbe6bbc2" name="Default Changelist" comment="" />
+      <created>1583829050476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583829050476</updated>
+      <workItem from="1583829058003" duration="20000" />
+      <workItem from="1583829118495" duration="2071000" />
+      <workItem from="1583887455071" duration="4330000" />
+      <workItem from="1584417994800" duration="4429000" />
+      <workItem from="1584493107001" duration="1585000" />
+      <workItem from="1584586159429" duration="5095000" />
+      <workItem from="1584665591932" duration="2236000" />
+      <workItem from="1584751856081" duration="2156000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="181" key="#Notifications" timestamp="1583829292376">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="181" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1583829292376" />
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1584665597354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584665597354" />
+    <state x="676" y="194" key="SettingsEditor" timestamp="1584418020276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="194" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584418020276" />
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584665591636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584665591636" />
+    <state x="334" y="227" key="new project wizard" timestamp="1583907399724">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="227" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1583907399724" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584418074752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584418074752" />
+  </component>
+</project>

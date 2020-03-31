@@ -15,6 +15,6 @@ public class FebsAccessDeniedHandler implements AccessDeniedHandler {
     @Override
     public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AccessDeniedException e) throws IOException, ServletException {
         FebsResponse febsResponse = new FebsResponse();
-        FebsUtil.makeResponse(httpServletResponse, MediaType.APPLICATION_JSON_UTF8_VALUE, HttpServletResponse.SC_FORBIDDEN, febsResponse.message("没有权限访问该资源 o"));
+        FebsUtil.makeResponse(httpServletResponse, MediaType.APPLICATION_JSON_VALUE, HttpServletResponse.SC_FORBIDDEN, febsResponse.message("没有权限访问该资源 o"));
     }
 }
