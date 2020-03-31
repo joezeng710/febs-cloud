@@ -47,10 +47,11 @@
             <!-- 这个需要为 true 热部署才有效 -->
             <optional>true</optional>
         </dependency>
+        <!--升级 2.5.4 -> 2.5.7-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
-            <version>2.5.4</version>
+            <version>2.5.7</version>
         </dependency>
         <dependency>
             <groupId>p6spy</groupId>
