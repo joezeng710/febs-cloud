@@ -46,6 +46,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+
         <!-- nacos配置 -->
         <!-- 升级 groupId : springframework.cloud -> alibaba.cloud
                  arfifactId-->
