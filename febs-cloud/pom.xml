@@ -13,6 +13,7 @@
         <module>../febs-gateway</module>
         <module>../febs-server</module>
         <module>../febs-monitor</module>
+        <module>../febs-tx-manager</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -32,6 +33,8 @@
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
         <!--升级 -->
         <com-alibaba-cloud.version>2.1.1.RELEASE</com-alibaba-cloud.version>
+
+        <codingapi.txlcn.version>5.0.2.RELEASE</codingapi.txlcn.version>
     </properties>
 
     <dependencyManagement>
@@ -50,6 +53,22 @@
                 <version>${com-alibaba-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- tx-lcn依赖管理 -->
+            <dependency>
+                <groupId>com.codingapi.txlcn</groupId>
+                <artifactId>txlcn-tc</artifactId>
+                <version>${codingapi.txlcn.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.codingapi.txlcn</groupId>
+                <artifactId>txlcn-tm</artifactId>
+                <version>${codingapi.txlcn.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.codingapi.txlcn</groupId>
+                <artifactId>txlcn-txmsg-netty</artifactId>
+                <version>${codingapi.txlcn.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
